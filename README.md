@@ -393,9 +393,9 @@ WHERE factions_wizards.wizard_id IS NULL;
 WORKS!
 
 ## Resources
-*[A Visual Explanation of SQL Joins](http://blog.codinghorror.com/a-visual-explanation-of-sql-joins/)
-*[The 3 Ring Binder Model](http://blog.seldomatt.com/blog/2012/10/17/about-sql-joins-the-3-ring-binder-model/)
+* [A Visual Explanation of SQL Joins](http://blog.codinghorror.com/a-visual-explanation-of-sql-joins/)
+* [The 3 Ring Binder Model](http://blog.seldomatt.com/blog/2012/10/17/about-sql-joins-the-3-ring-binder-model/)
 
-*[SQL Innter Join](http://www.padjo.org/tutorials/database-joins/sql-inner-join/)
-*[Joining on Many To Many Relationships](http://www.padjo.org/tutorials/database-joins/sql-many-to-one/)
-*[SQL Left Joins](http://www.padjo.org/tutorials/database-joins/sql-left-joins/)
+* [SQL Innter Join](http://www.padjo.org/tutorials/database-joins/sql-inner-join/)
+* [Joining on Many To Many Relationships](http://www.padjo.org/tutorials/database-joins/sql-many-to-one/)
+* [SQL Left Joins](http://www.padjo.org/tutorials/database-joins/sql-left-joins/)
