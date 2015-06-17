@@ -329,7 +329,7 @@ Our result looks like this:
 We know that in the above query `wizards` is the LEFT and `factions_wizards` is the RIGHT, but what is `factions`? The RIGHT RIGHT? We can test this by creating a Faction on one joins. Let's add one, then run our previous query without the `WHERE` clause.
 
 ```
-INSERT INTO factions (name, agenda) VALUES ('NAWBLA', 'They need love too');
+INSERT INTO factions (name, agenda) VALUES ('Muggle Lovers', 'They need love too');
 ```
 
 Then run the query:
@@ -350,7 +350,7 @@ name   | age | color | id | wizard_id | faction_id | id |       name       |    
 
 ```
 
-No NAWBLA as expected, since an inner join only returns records where all of the `JOIN` `ON` clauses match.
+No Muggle Lovers as expected, since an inner join only returns records where all of the `JOIN` `ON` clauses match.
 
 But what if we wanted to find all Factions that had no members?  First, let's try to figure out how to return all of the factions along with their users. Each JOIN statement defines what is the RIGHT side of the join. By saying `JOIN factions`, we're setting `factions` is the right side of this join, leaving `factions_wizards` to be the left.
 
