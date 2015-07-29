@@ -65,7 +65,7 @@ sqlite> SELECT wizards.name, wizards.age, powers.name, powers.damage
    ...> ON wizards.id = powers.wizard_id;
 
    name   | age |      name      | damage
-----------+-----+----------------+--------
+----+-----+----------------+--------
  Alviarin | 103 | fire ball      |      7
  Eriadna  |  85 | ice storm      |     13
  Bigby    |  40 | shape shift    |      0
@@ -85,7 +85,7 @@ sqlite> SELECT wizards.name, wizards.age, powers.name AS power, powers.damage
    ...> ON wizards.id = powers.wizard_id;
 
    name   | age |     power      | damage
-----------+-----+----------------+--------
+----+-----+----------------+--------
  Alviarin | 103 | fire ball      |      7
  Eriadna  |  85 | ice storm      |     13
  Bigby    |  40 | shape shift    |      0
@@ -113,7 +113,7 @@ sqlite> SELECT *
    ...> ON wizards.id = powers.wizard_id;
 
    name   | age | color | id | id |      name      | damage | wizard_id
-----------+-----+-------+----+----+----------------+--------+-----------
+----+-----+-------+----+----+----------------+--------+-----------
  Alviarin | 103 | White |  1 |  9 | fire ball      |      7 |         1
  Eriadna  |  85 | Green |  3 | 10 | ice storm      |     13 |         3
  Bigby    |  40 | Green |  4 | 11 | shape shift    |      0 |         4
@@ -160,7 +160,7 @@ And now we see that "Steven" shows up even though he's powerless:
 ```
 
    name   | age | color | id | id |      name      | damage | wizard_id
-----------+-----+-------+----+----+----------------+--------+-----------
+----+-----+-------+----+----+----------------+--------+-----------
  Alviarin | 103 | White |  1 |  9 | fire ball      |      7 |         1
  Eriadna  |  85 | Green |  3 | 10 | ice storm      |     13 |         3
  Bigby    |  40 | Green |  4 | 11 | shape shift    |      0 |         4
@@ -193,7 +193,7 @@ Our Result:
 
 ```
    name   | age | color | id | id |             name              | damage | wizard_id
-----------+-----+-------+----+----+-------------------------------+--------+-----------
+----+-----+-------+----+----+-------------------------------+--------+-----------
  Alviarin | 103 | White |  1 |  9 | fire ball                     |      7 |         1
  Eriadna  |  85 | Green |  3 | 10 | ice storm                     |     13 |         3
  Bigby    |  40 | Green |  4 | 11 | shape shift                   |      0 |         4
@@ -214,7 +214,7 @@ FROM wizards
 FULL OUTER JOIN powers
 ON wizards.id = powers.wizard_id;
    name   | age | color | id | id |             name              | damage | wizard_id
-----------+-----+-------+----+----+-------------------------------+--------+-----------
+----+-----+-------+----+----+-------------------------------+--------+-----------
  Alviarin | 103 | White |  1 |  9 | fire ball                     |      7 |         1
  Eriadna  |  85 | Green |  3 | 10 | ice storm                     |     13 |         3
  Bigby    |  40 | Green |  4 | 11 | shape shift                   |      0 |         4
@@ -319,7 +319,7 @@ Our result looks like this:
 
 ```
    name   | age | color | id | wizard_id | faction_id | id |     name     |                    agenda
-----------+-----+-------+----+-----------+------------+----+--------------+-----------------------------------------------
+----+-----+-------+----+-----------+------------+----+--------------+-----------------------------------------------
  Alviarin | 103 | White |  1 |         1 |          1 |  1 | Free Puppies | Winning hearts and minds through free puppies
  Tenser   |  75 | Brown |  2 |         2 |          1 |  1 | Free Puppies | Winning hearts and minds through free puppies
 
@@ -342,7 +342,7 @@ ON wizards.id = factions_wizards.wizard_id
 INNER JOIN factions
 ON factions.id = factions_wizards.faction_id;
 name   | age | color | id | wizard_id | faction_id | id |       name       |                    agenda
-----------+-----+-------+----+-----------+------------+----+------------------+-----------------------------------------------
+----+-----+-------+----+-----------+------------+----+------------------+-----------------------------------------------
  Alviarin | 103 | White |  1 |         1 |          1 |  1 | Free Puppies     | Winning hearts and minds through free puppies
  Alviarin | 103 | White |  1 |         1 |          2 |  2 | Guns for Ferrets | No explanation needed
  Tenser   |  75 | Brown |  2 |         2 |          1 |  1 | Free Puppies     | Winning hearts and minds through free puppies
@@ -369,7 +369,7 @@ WOOT! Our result looks like this:
 
 ```
   name   | age | color | id | wizard_id | faction_id | id |       name       |                    agenda
-----------+-----+-------+----+-----------+------------+----+------------------+-----------------------------------------------
+----+-----+-------+----+-----------+------------+----+------------------+-----------------------------------------------
  Tenser   |  75 | Brown |  2 |         2 |          1 |  1 | Free Puppies     | Winning hearts and minds through free puppies
  Alviarin | 103 | White |  1 |         1 |          1 |  1 | Free Puppies     | Winning hearts and minds through free puppies
  Alviarin | 103 | White |  1 |         1 |          2 |  2 | Guns for Ferrets | No explanation needed
