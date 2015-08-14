@@ -292,7 +292,7 @@ sqlite> SELECT *
    ...> ON wizards.id = factions_wizards.wizard_id
 ```
 
-Here we are linking the wizards table and the factions_wizards table on the id and wizard_id properties respectively. This is only have of what we want though. This query will only return the wizards and a table that has faction_ids. We want factions! To do this, we'll need another INNER JOIN:
+Here we are linking the wizards table and the factions_wizards table on the id and wizard_id properties respectively. This is only half of what we want though. This query will only return the wizards and a table that has faction_ids. We want factions! To do this, we'll need another INNER JOIN:
 
 ```
 SELECT *
