@@ -399,3 +399,5 @@ WORKS!
 * [SQL Innter Join](http://www.padjo.org/tutorials/database-joins/sql-inner-join/)
 * [Joining on Many To Many Relationships](http://www.padjo.org/tutorials/database-joins/sql-many-to-one/)
 * [SQL Left Joins](http://www.padjo.org/tutorials/database-joins/sql-left-joins/)
+
+<a href='https://learn.co/lessons/sql-book-joins' data-visibility='hidden'>View this lesson on Learn.co</a>
