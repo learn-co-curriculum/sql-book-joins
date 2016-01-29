@@ -400,4 +400,4 @@ WORKS!
 * [Joining on Many To Many Relationships](http://www.padjo.org/tutorials/database-joins/sql-many-to-one/)
 * [SQL Left Joins](http://www.padjo.org/tutorials/database-joins/sql-left-joins/)
 
-<a href='https://learn.co/lessons/sql-book-joins' data-visibility='hidden'>View this lesson on Learn.co</a>
+<p data-visibility='hidden'>View <a href='https://learn.co/lessons/sql-book-joins' title='Joins'>Joins</a> on Learn.co and start learning to code for free.</p>
